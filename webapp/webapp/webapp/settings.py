@@ -25,12 +25,14 @@ SECRET_KEY = '=z5y@q^gpj!z4n_0rgim7)32r+atx#&x_cygd^2ip7!%ucop02'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['130.108.217.17']
+ALLOWED_HOSTS = ['130.108.217.17',
+		 '127.0.0.1']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'ffotf.apps.FfotfConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
