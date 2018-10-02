@@ -1,5 +1,5 @@
 <style>
-button1 {
+button {
 	background-color: #2ECC71;
 	border: none;
 	color: white;
@@ -9,7 +9,7 @@ button1 {
 	display: inline-block;
 	font-size: 16px;
 }
-button2 {
+input2 {
 	background-color: #CB4335;
 	border: none;
 	color: white;
@@ -20,12 +20,17 @@ button2 {
 	font-size: 16px
 }
 </style>
-<button1 type="button">activate</button1>
-<br>
-<br>
-<button2 type="button">deactivate</button2>
-<br>
-<br>
 <video width="320" hight="240" controls></video>
-{% load static %}
-<link rel="stylesheet" type="text/css" href="{% static 'ffotf/style.css' %}">
+<br>
+<form action='actionurl'  method='GET'>
+<button>activate</button>
+</form>
+<br>
+<br>
+<form>
+<input type="button" name="deactivate" onclick="alert('Deactivate')" value="Deactivate">
+</form>
+<br>
+<br>
+<br>
+<br>
