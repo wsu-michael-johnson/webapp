@@ -7,5 +7,7 @@ def index(request):
 		print("button pressed")
 	return render(request, 'ffotf/index.html',context)
 def action(request):
-	return HttpResponse("the button is presses")
+	context ={}
+	exec(open("start.py").read())
+	return render(request,'ffotf/activate.html',context)
 # Create your views here.
